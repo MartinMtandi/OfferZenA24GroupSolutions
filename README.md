@@ -46,8 +46,7 @@ EXAMPLE 02
  }
 ```
 ### 3. Is there any difference between regular function syntax and the shorter arrow function syntax? (Write the answer in your own words)
-The difference between regular functions and arrow functions (sometimes refered to as fat arrow functions) goes beyond syntax. Fat arrow functions are particularly useful
-in funtional based components in Reactjs especially when it comes to binding this. For example:
+The difference between regular functions and arrow functions (sometimes refered to as fat arrow functions) goes beyond syntax. Fat arrow functions are particularly useful in functional based components in Reactjs especially when it comes to binding this. For example:
 ```
  function handleRegularFunction() {
   console.log(this);
