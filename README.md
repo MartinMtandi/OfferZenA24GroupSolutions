@@ -3,7 +3,7 @@
 ### Email: mtandimartin@gmail.com
 
 ### JAVASCRIPT
-# 1. What is your favourite new javascript feature and why?
+### 1. What is your favourite new javascript feature and why?
 The spread operator. It allows us to create a copy of an array with so much ease. for example:
 
 let array = [1, 2, 3];
