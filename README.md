@@ -221,7 +221,7 @@ export default ParentComponent;
 
     return (props) => {
         return (
-            <div style={{height: 'divHeight'}}>
+            <div style={{height: {`${divHeight}`}}}>
                 <WrappedComponent {...props} />
             </div>
         )
