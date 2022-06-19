@@ -140,10 +140,7 @@ export default ParentComponent;
 ```
 ### REACT:
 
-### 14. React test step1:
-
-Create a react component that has a <div/> with a border.
-Inside this <div/> should be a <span/> that displays the ‘live’ width of the browser window at all times.  Keep in mind that the size of the window could easily be changed by the user and you should reflect this.
+### 14. React test step1: Create a react component that has a div tag with a border. Inside this div tag should be a span tag that displays the ‘live’ width of the browser window at all times.  Keep in mind that the size of the window could easily be changed by the user and you should reflect this.
 ```
  import React from 'react';
 
@@ -172,9 +169,7 @@ Inside this <div/> should be a <span/> that displays the ‘live’ width of the
   );
  }
 ```
-### 15. React test step2:
-
-### Inside the <div/> you created in the previous step, add a text input that, as a number is entered into it, uses that number to set the height of the div itself in ### pixels, live as you update the text field (keypress not change event).
+### 15. React test step2: Inside the div tag you created in the previous step, add a text input that, as a number is entered into it, uses that number to set the height of the div itself in ### pixels, live as you update the text field (keypress not change event).
 ```
  import React, { useState, useEffect } from 'react'
 
