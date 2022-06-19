@@ -98,7 +98,7 @@ None I can think of at this time.
 ### 13. How do you test in your unit tests to see if the correct properties are being passed to child components.
 
 ### PARENT COMPONENT
-
+```
  import React from "react";
  import ChildComponent from "./ChildComponent";
  
@@ -110,9 +110,9 @@ None I can think of at this time.
  );
 
 export default ParentComponent;
-
+```
 ### JEST TEST SCRIPT
-
+```
  import React from "react";
  import { render } from "@testing-library/react";
  import ParentComponent from "./ParentComponent";
@@ -137,14 +137,14 @@ export default ParentComponent;
   render(<ParentComponent />);
   expect(mockChildComponent).not.toHaveBeenCalled();
  });
-
+```
 ### REACT:
 
 ### 14. React test step1:
 
 Create a react component that has a <div/> with a border.
 Inside this <div/> should be a <span/> that displays the ‘live’ width of the browser window at all times.  Keep in mind that the size of the window could easily be changed by the user and you should reflect this.
-
+```
  import React from 'react';
 
  export function App(props) {
@@ -171,11 +171,11 @@ Inside this <div/> should be a <span/> that displays the ‘live’ width of the
     </div>
   );
  }
-
+```
 ### 15. React test step2:
 
 ### Inside the <div/> you created in the previous step, add a text input that, as a number is entered into it, uses that number to set the height of the div itself in ### pixels, live as you update the text field (keypress not change event).
-
+```
  import React, { useState, useEffect } from 'react'
 
  export default function UserWindow() {
@@ -214,22 +214,9 @@ Inside this <div/> should be a <span/> that displays the ‘live’ width of the
    </div>
   )
  }
-
-### 16. React test step3:
-
-### Add the following code to your project root (same project as in step 2, but add the code in the global / window space):  
-
-###    Let divHeight;
-###    window.setDivHeight = (height) => divHeight = height;
-
-### Add a HOC for your div component that allows you to set the height of your <div/> component from the previous steps by calling that external function.
-
-### If you do not know what a HOC is or how to create one, that is also fine, just mention that in your answer and instead create a parent component that can still do ### this (allow you to call that function ‘setDivHeight’ in order to set the height of the div manually.
-
-### Bare in mind that when the height of the div is forcefully set like this, the text fields value should also update to reflect this and should still carry on 
-### working as normal (user can continue to modify its value).  
-
-
+```
+### 16. React test step3: Add the following code to your project root (same project as in step 2, but add the code in the global / window space): Let divHeight; window.setDivHeight = (height) => divHeight = height; Add a HOC for your div component that allows you to set the height of your <div/> component from the previous steps by calling that external function. If you do not know what a HOC is or how to create one, that is also fine, just mention that in your answer and instead create a parent component that can still do ### this (allow you to call that function ‘setDivHeight’ in order to set the height of the div manually. Bare in mind that when the height of the div is forcefully set like this, the text fields value should also update to reflect this and should still carry on working as normal (user can continue to modify its value).  
+```
  import React from 'react';
 
  const HOC = (WrappedComponent) => {
@@ -247,3 +234,4 @@ Inside this <div/> should be a <span/> that displays the ‘live’ width of the
  }
   
  export default HOC
+```
