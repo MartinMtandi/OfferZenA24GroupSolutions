@@ -12,25 +12,25 @@ let copyArray = [...array];
 # 2. Explain an interesting way in which you have used this javascript feature.
 The spread operator has made it easier for me to desctructor large objects or arrays. I use the spread operator a lot, especially when I am working with Formik. for example:
 
-EXAMPLE 01
-## <Formik
-##    initialValues={{...INITIAL_VALUES}}
-##    validationSchema={FORM_VALIDATION}
-##    enableReinitialize
-##    onSubmit={values => {
-##        handleSubmit(values)
-##    }}
-## >
-##    {({...rest}) => {
-##        console.log(rest.values);
-##        console.log(rest.errors);
-##        return (
-##            <Form>
-##               // your input fields go here
-##            </Form>
-##        )
-##    }}
-## </Formik>
+## EXAMPLE 01
+# <Formik
+#    initialValues={{...INITIAL_VALUES}}
+#    validationSchema={FORM_VALIDATION}
+#    enableReinitialize
+#    onSubmit={values => {
+#        handleSubmit(values)
+#    }}
+# >
+#    {({...rest}) => {
+#        console.log(rest.values);
+#        console.log(rest.errors);
+#        return (
+#            <Form>
+#               // your input fields go here
+#            </Form>
+#        )
+#    }}
+# </Formik>
 
 EXAMPLE 02
 # const [state, setState] = React.useState({
@@ -42,20 +42,20 @@ EXAMPLE 02
 #  setState({...state, firstname: 'Martin'})
 # }
 
-# 3. Is there any difference between regular function syntax and the shorter arrow function syntax? (Write the answer in your own words)
+## 3. Is there any difference between regular function syntax and the shorter arrow function syntax? (Write the answer in your own words)
 The difference between regular functions and arrow functions (sometimes refered to as fat arrow functions) goes beyond syntax. Fat arrow functions are particularly useful
 in funtional based components in Reactjs especially when it comes to binding this. For example:
 
-## function handleRegularFunction() {
-##  console.log(this);
-## }
-##
-## const handleArrowFunction = () => {
-##  console.log(this)
-## }
-##
-## handleRegularFunction();
-## handleArrowFunction();
+# function handleRegularFunction() {
+#  console.log(this);
+# }
+#
+# const handleArrowFunction = () => {
+#  console.log(this)
+# }
+#
+# handleRegularFunction();
+# handleArrowFunction();
 
 In the example above, the regular function will log the properties of the window. The arrow function will log properties of its parent.
 
