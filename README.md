@@ -5,10 +5,10 @@
 ### JAVASCRIPT
 ### 1. What is your favourite new javascript feature and why?
 The spread operator. It allows us to create a copy of an array with so much ease. for example:
-
+```
 let array = [1, 2, 3];
 let copyArray = [...array];
-
+```
 ### 2. Explain an interesting way in which you have used this javascript feature.
 The spread operator has made it easier for me to desctructor large objects or arrays. I use the spread operator a lot, especially when I am working with Formik. for example:
 
@@ -35,6 +35,7 @@ EXAMPLE 01
  ```
 
 EXAMPLE 02
+```
  const [state, setState] = React.useState({
     firstname: '',
     lastname: '',
@@ -43,7 +44,7 @@ EXAMPLE 02
  const handleChangeName = () => {
   setState({...state, firstname: 'Martin'})
  }
-
+```
 ### 3. Is there any difference between regular function syntax and the shorter arrow function syntax? (Write the answer in your own words)
 The difference between regular functions and arrow functions (sometimes refered to as fat arrow functions) goes beyond syntax. Fat arrow functions are particularly useful
 in funtional based components in Reactjs especially when it comes to binding this. For example:
