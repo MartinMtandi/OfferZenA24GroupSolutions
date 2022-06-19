@@ -81,7 +81,7 @@ It really depends with what I am trying to achieve. I mainly use flex and grid. 
 ### 9. Are negative margins legal and what do they do (margin: -20px)?
 Its actually not a bad practice to have negative margins, as long as you're aware of the fact that you're using negative margins, and that this pulls/moves elements from their otherwise normal position.
 
-### 10. If a <div/> has no margin or other styling and a <p/> tag inside of it has a margin top of some kind, the margin from the <p/> tag will show up on the div instead (the margin will show above the div not inside of it), why is this?  What are the different things that can be done to prevent it?
+### 10. If a div tag has no margin or other styling and a p tag inside of it has a margin top of some kind, the margin from the p tag will show up on the div instead (the margin will show above the div not inside of it), why is this?  What are the different things that can be done to prevent it?
 The margin top of the child element also produces margins for the parent element. The reason for this problem is that the parent element does not have a complete inclusion, so that the child element cannot find the border or padding of the parent element; This is called 'margin collapsing'.
 CSS stipulates:
 The margin of all two or more adjacent box elements will be merged into a single margin share.
