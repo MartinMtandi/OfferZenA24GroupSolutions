@@ -13,24 +13,26 @@ let copyArray = [...array];
 The spread operator has made it easier for me to desctructor large objects or arrays. I use the spread operator a lot, especially when I am working with Formik. for example:
 
 EXAMPLE 01
-    <Formik
-        initialValues={{...INITIAL_VALUES}}
-        validationSchema={FORM_VALIDATION}
-        enableReinitialize
-        onSubmit={values => {
-            handleSubmit(values)
-        }}
-     >
-        {({...rest}) => {
-            console.log(rest.values);
-            console.log(rest.errors);
-            return (
-                <Form>
-                   // your input fields go here
-                </Form>
-            )
-        }}
-     </Formik>
+```
+<Formik
+    initialValues={{...INITIAL_VALUES}}
+    validationSchema={FORM_VALIDATION}
+    enableReinitialize
+    onSubmit={values => {
+        handleSubmit(values)
+    }}
+ >
+    {({...rest}) => {
+        console.log(rest.values);
+        console.log(rest.errors);
+        return (
+            <Form>
+               // your input fields go here
+            </Form>
+        )
+    }}
+ </Formik>
+ ```
 
 EXAMPLE 02
  const [state, setState] = React.useState({
