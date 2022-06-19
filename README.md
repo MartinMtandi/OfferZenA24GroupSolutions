@@ -48,7 +48,7 @@ EXAMPLE 02
 ### 3. Is there any difference between regular function syntax and the shorter arrow function syntax? (Write the answer in your own words)
 The difference between regular functions and arrow functions (sometimes refered to as fat arrow functions) goes beyond syntax. Fat arrow functions are particularly useful
 in funtional based components in Reactjs especially when it comes to binding this. For example:
-
+```
  function handleRegularFunction() {
   console.log(this);
  }
@@ -59,7 +59,7 @@ in funtional based components in Reactjs especially when it comes to binding thi
 
  handleRegularFunction();
  handleArrowFunction();
-
+```
 In the example above, the regular function will log the properties of the window. The arrow function will log properties of its parent.
 
 ### 4. What is the difference between ‘myFunctionCall(++foo)’   and  ‘myFunctionCall(foo++)’
@@ -73,7 +73,7 @@ A javascipt class is a template for creating objects. Functions do specific thin
 ### 6. In your own words, explain css specificity.
 In a case where there are 2 or more rules that apply to the same html element, the selector with the highest specificity value will be applied.
 
-### 7. In your own words, explain, what is ‘!important’ in css.  Also how does it work?  Are there any special circumstances when using it, where it’s behaviour might ### not be what you expect?
+### 7. In your own words, explain, what is ‘!important’ in css.  Also how does it work?  Are there any special circumstances when using it, where it’s behaviour might not be what you expect?
 !important is a css rule used to override any styling that might have been applied to that html element. Its behaviour might not be what you expect, especially when dealing with foreign CSS. Since !important contradicts the expected behaviour of CSS, its generally recommended to avoid using it.
 
 ### 8. What is your prefered layout system: inline-block, floating + clearing, flex, grid, other?  And why?
@@ -82,8 +82,7 @@ It really depends with what I am trying to achieve. I mainly use flex and grid. 
 ### 9. Are negative margins legal and what do they do (margin: -20px)?
 Its actually not a bad practice to have negative margins, as long as you're aware of the fact that you're using negative margins, and that this pulls/moves elements from their otherwise normal position.
 
-### 10. If a <div/> has no margin or other styling and a <p/> tag inside of it has a margin top of some kind, the margin from the <p/> tag will show up on the div 
-### instead (the margin will show above the div not inside of it), why is this?  What are the different things that can be done to prevent it?
+### 10. If a <div/> has no margin or other styling and a <p/> tag inside of it has a margin top of some kind, the margin from the <p/> tag will show up on the div instead (the margin will show above the div not inside of it), why is this?  What are the different things that can be done to prevent it?
 The margin top of the child element also produces margins for the parent element. The reason for this problem is that the parent element does not have a complete inclusion, so that the child element cannot find the border or padding of the parent element; This is called 'margin collapsing'.
 CSS stipulates:
 The margin of all two or more adjacent box elements will be merged into a single margin share.
